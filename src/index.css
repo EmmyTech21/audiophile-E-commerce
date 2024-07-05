@@ -1,13 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (min-width: 976px) {
+  #hero {
+    height: 500px;
+  }
+
+  #hero-img img {
+    height: 500px;
+  }
+}
+
+.cart-overlay {
+  margin-top: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: flex-end;
+
+  /* align-items: center; */
+  z-index: 1000;
+}
+
+.cart-container {
+  /* background: white; */
+  padding: 20px;
+  /* border-radius: 10px; */
+  /* width: 80%; */
+  /* max-width: 500px; */
 }
